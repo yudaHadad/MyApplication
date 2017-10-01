@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context="com.example.yuda.myapplication.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100">
+
+        <AutoCompleteTextView
+            android:id="@+id/titleET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:background="@android:color/holo_blue_bright"
+            android:ems="10"
+            android:hint="@string/movieName">
+        </AutoCompleteTextView>
+
+        <Button
+            android:id="@+id/goSearchBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/goSearch"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myListLV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="#d8f3f9" />
+
+
+</LinearLayout>
